@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +15,26 @@
             --accent: #3b82f6;
             --success: #10b981;
         }
-        
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        
+
         body {
             font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-color: var(--background);
             color: var(--text);
             line-height: 1.6;
         }
-        
+
         .presentation {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         .slide {
             background-color: var(--slide-bg);
             margin-bottom: 40px;
@@ -43,72 +44,72 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .slide-title {
             margin-bottom: 24px;
         }
-        
+
         .slide-title h1 {
             font-size: 28px;
             font-weight: 700;
             color: var(--primary);
             margin: 0;
         }
-        
+
         .slide-title h2 {
             font-size: 22px;
             font-weight: 600;
             color: var(--text);
             margin: 4px 0 0 0;
         }
-        
+
         .slide-content {
             display: flex;
             flex-direction: column;
         }
-        
+
         .column-layout {
             display: flex;
             gap: 24px;
             margin-bottom: 20px;
         }
-        
+
         .column {
             flex: 1;
             display: flex;
             flex-direction: column;
         }
-        
+
         .cover-slide {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             text-align: center;
             padding: 48px 32px;
         }
-        
+
         .cover-slide h1 {
             font-size: 36px;
             font-weight: 800;
             margin-bottom: 12px;
         }
-        
+
         .cover-slide h2 {
             font-size: 22px;
             font-weight: 400;
             margin-bottom: 8px;
         }
-        
+
         .cover-slide p {
             opacity: 0.9;
             margin-bottom: 24px;
         }
-        
+
         .profile-container {
             display: flex;
             justify-content: center;
             margin-bottom: 24px;
         }
-        
+
         .profile-pic {
             width: 180px;
             height: 180px;
@@ -117,7 +118,7 @@
             border: 4px solid white;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
-        
+
         .contact-info {
             display: flex;
             flex-wrap: wrap;
@@ -125,7 +126,7 @@
             justify-content: center;
             margin-top: 24px;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
@@ -133,7 +134,7 @@
             font-size: 16px;
             color: #ffffff;
         }
-        
+
         .contact-item a {
             color: #ffffff;
         }
@@ -144,20 +145,20 @@
             padding: 16px;
             margin-bottom: 16px;
         }
-        
+
         .skill-card h3 {
             color: var(--primary);
             margin-top: 0;
             margin-bottom: 12px;
             font-size: 18px;
         }
-        
+
         .skill-list {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
-        
+
         .skill-tag {
             background-color: var(--primary);
             color: white;
@@ -166,18 +167,18 @@
             font-size: 14px;
             font-weight: 500;
         }
-        
+
         .timeline {
             display: flex;
             flex-direction: column;
             gap: 16px;
         }
-        
+
         .timeline-item {
             display: flex;
             gap: 16px;
         }
-        
+
         .timeline-dot {
             width: 16px;
             height: 16px;
@@ -187,7 +188,7 @@
             flex-shrink: 0;
             position: relative;
         }
-        
+
         .timeline-dot::after {
             content: "";
             position: absolute;
@@ -197,32 +198,32 @@
             left: 7px;
             top: 16px;
         }
-        
+
         .timeline-item:last-child .timeline-dot::after {
             display: none;
         }
-        
+
         .timeline-content {
             flex: 1;
         }
-        
+
         .timeline-title {
             font-weight: 600;
             font-size: 17px;
             margin-bottom: 4px;
             color: var(--primary);
         }
-        
+
         .timeline-subtitle {
             color: #6b7280;
             font-size: 14px;
             margin-bottom: 8px;
         }
-        
+
         .timeline-description {
             font-size: 15px;
         }
-        
+
         .achievement-card {
             background-color: #f8fafc;
             border-left: 4px solid var(--success);
@@ -230,24 +231,24 @@
             margin-bottom: 16px;
             border-radius: 0 8px 8px 0;
         }
-        
+
         .achievement-title {
             font-weight: 600;
             color: var(--text);
             margin-bottom: 8px;
         }
-        
+
         .achievement-stat {
             font-size: 20px;
             font-weight: 700;
             color: var(--success);
             margin-bottom: 4px;
         }
-        
+
         .quote-slide {
             text-align: center;
         }
-        
+
         .quote {
             font-size: 24px;
             font-weight: 300;
@@ -256,7 +257,7 @@
             line-height: 1.4;
             margin: 24px 0;
         }
-        
+
         .slide-number {
             position: absolute;
             bottom: 16px;
@@ -264,11 +265,11 @@
             font-size: 14px;
             color: #9ca3af;
         }
-        
+
         ul {
             padding-left: 20px;
         }
-        
+
         li {
             margin-bottom: 8px;
         }
@@ -358,86 +359,88 @@
             .slide {
                 padding: 24px;
             }
-            
+
             .column-layout {
                 flex-direction: column;
                 gap: 16px;
             }
-            
+
             .soft-skills-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .cover-slide h1 {
                 font-size: 28px;
             }
-            
+
             .cover-slide h2 {
                 font-size: 18px;
             }
-            
+
             .profile-pic {
                 width: 150px;
                 height: 150px;
             }
-            
+
             .contact-info {
                 flex-direction: column;
                 align-items: center;
                 gap: 8px;
             }
-            
+
             .slide-title h1 {
                 font-size: 24px;
             }
-            
+
             .slide-title h2 {
                 font-size: 18px;
             }
-            
+
             .thank-you-slide h1 {
                 font-size: 28px;
             }
-            
+
             .thank-you-slide p {
                 font-size: 18px;
             }
         }
-        
+
         @media (max-width: 480px) {
             .slide {
                 padding: 20px;
             }
-            
+
             .profile-pic {
                 width: 120px;
                 height: 120px;
             }
-            
+
             .timeline-item {
                 gap: 12px;
             }
-            
+
             .timeline-title {
                 font-size: 16px;
             }
-            
+
             .slide-title h1 {
                 font-size: 22px;
             }
-            
+
             .slide-title h2 {
                 font-size: 16px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="presentation">
         <!-- Slide 1: Cover -->
         <div class="slide cover-slide">
             <div class="profile-container">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFS-oscV3PqrQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1687534756580?e=1750291200&v=beta&t=x8hzqFPQqY_CGbE2VDEtWMjWv9KzGeECjv8EHyXGsHQ" alt="Moises Cardoso" class="profile-pic">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFS-oscV3PqrQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1687534756580?e=1750291200&v=beta&t=x8hzqFPQqY_CGbE2VDEtWMjWv9KzGeECjv8EHyXGsHQ"
+                    alt="Moises Cardoso" class="profile-pic">
             </div>
             <h1>Moises Cardoso</h1>
             <h2>Tech Lead & Software Engineering Manager</h2>
@@ -449,20 +452,22 @@
                 <div class="contact-item">
                     <span>📧 <a href="mailto:mcardosodeveloper@outlook.com">mcardosodeveloper@outlook.com</a></span>
                 </div>
-                <div class="contact-item" >
-                    <span>🔗 <a href="https://www.linkedin.com/in/moises-cardoso/" target="_blank">LinkedIn/moisescardoso</a></span>
+                <div class="contact-item">
+                    <span>🔗 <a href="https://www.linkedin.com/in/moises-cardoso/"
+                            target="_blank">LinkedIn/moisescardoso</a></span>
                 </div>
             </div>
             <div class="slide-number">1</div>
         </div>
-        
+
         <!-- Slide 2: Resumo Profissional -->
         <div class="slide">
             <div class="slide-title">
                 <h1>Resumo Profissional</h1>
             </div>
             <div class="slide-content">
-                <p>Líder técnico estratégico com mais de 15 anos de experiência em desenvolvimento de software e 3+ anos em liderança de equipes de engenharia. Especializado em:</p>
+                <p>Líder técnico estratégico com mais de 15 anos de experiência em desenvolvimento de software e 3+ anos
+                    em liderança de equipes de engenharia. Especializado em:</p>
                 <div class="column-layout">
                     <div class="column">
                         <div class="achievement-card">
@@ -485,11 +490,13 @@
                         </div>
                     </div>
                 </div>
-                <p style="margin-top: 20px;">Apaixonado por mentorar desenvolvedores e implementar padrões de engenharia que aumentam a qualidade e escalabilidade do software, constantemente busco soluções inovadoras para desafios técnicos complexos.</p>
+                <p style="margin-top: 20px;">Apaixonado por mentorar desenvolvedores e implementar padrões de engenharia
+                    que aumentam a qualidade e escalabilidade do software, constantemente busco soluções inovadoras para
+                    desafios técnicos complexos.</p>
             </div>
             <div class="slide-number">2</div>
         </div>
-        
+
         <!-- Slide 3: Experiência Profissional - RDC Viagens -->
         <div class="slide">
             <div class="slide-title">
@@ -534,7 +541,7 @@
             </div>
             <div class="slide-number">3</div>
         </div>
-        
+
         <!-- Slide 4: Experiência Profissional - CVC e SP Imóvel -->
         <div class="slide">
             <div class="slide-title">
@@ -565,7 +572,8 @@
                             <div class="timeline-subtitle">Novembro 2012 - Dezembro 2019 (7 anos 2 meses)</div>
                             <div class="timeline-description">
                                 <ul>
-                                    <li>Liderança técnica do desenvolvimento de sistema ERP para mercado imobiliário</li>
+                                    <li>Liderança técnica do desenvolvimento de sistema ERP para mercado imobiliário
+                                    </li>
                                     <li>Coordenação de equipe com 5 desenvolvedores</li>
                                     <li>Implementação de CI/CD com redução de 50% no tempo de lançamento</li>
                                     <li>Refatoração de código legado e estabelecimento de processos de code review</li>
@@ -577,7 +585,7 @@
             </div>
             <div class="slide-number">4</div>
         </div>
-        
+
         <!-- Slide 5: Conquistas e Resultados -->
         <div class="slide">
             <div class="slide-title">
@@ -623,7 +631,7 @@
             </div>
             <div class="slide-number">5</div>
         </div>
-        
+
         <!-- Slide 6: Competências Técnicas -->
         <div class="slide">
             <div class="slide-title">
@@ -693,7 +701,7 @@
             </div>
             <div class="slide-number">6</div>
         </div>
-        
+
         <!-- Slide 7: Soft Skills -->
         <div class="slide">
             <div class="slide-title">
@@ -761,7 +769,7 @@
             </div>
             <div class="slide-number">7</div>
         </div>
-        
+
         <!-- Slide 8: Formação e Certificações -->
         <div class="slide">
             <div class="slide-title">
@@ -795,7 +803,7 @@
                         <div class="achievement-card">
                             <div class="achievement-title">Scrum Master Certified</div>
                         </div>
-                        
+
                         <h3 style="margin-top: 24px;">Idiomas</h3>
                         <div>
                             <span class="badge">Português (Nativo)</span>
@@ -806,7 +814,7 @@
             </div>
             <div class="slide-number">8</div>
         </div>
-        
+
         <!-- Slide 9: Por Que Me Contratar? -->
         <div class="slide">
             <div class="slide-title">
@@ -819,6 +827,23 @@
                             <div class="achievement-title">Experiência Comprovada</div>
                             <p>+15 anos em desenvolvimento e 3+ anos em liderança técnica</p>
                         </div>
-                        <div class="achievement-card">
-                            <div class="achievement-title">Conhecimento Técnico</div>
-                            <p>Domínio de tecnologias modernas e práticas av
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">Conhecimento Técnico</div>
+                        <p> Destaca seu domínio de tecnologias modernas (.NET Core, microsserviços, CI/CD) e práticas
+                            avançadas de desenvolvimento.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">Liderança Comprovada</div>
+                        <p>Mostra sua capacidade de formar e inspirar equipes de alto desempenho.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">Resultados Mensuráveis</div>
+                        <p> Apresenta métricas impressionantes como 40% de redução no tempo de implantação, 65% menos
+                            bugs em produção e 35% de aumento na velocidade de entrega</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
